@@ -41,13 +41,28 @@ const Article = () => {
             </ButtonGroup>
             <Button variant='outlined'>Delete</Button>
             <Dialog open={open}>
-                <DialogTitle>Create</DialogTitle>
+                <DialogTitle style={{ fontSize: '1.8rem' }}>
+                    다이어로그 폼
+                </DialogTitle>
                 <DialogContent>
-                    <DialogContentText>Hello Dialog!!</DialogContentText>
+                    <DialogContentText>다이어로그 폼 테스트</DialogContentText>
                 </DialogContent>
                 <DialogActions>
-                    <Button variant='outlined'>Create</Button>
-                    <Button variant='outlined' onClick={() => setOpen(false)}>
+                    <Button
+                        variant='outlined'
+                        onClick={() => setOpen(false)}
+                        style={{
+                            backgroundColor: '#9AD0EC',
+                            color: 'white',
+                        }}
+                    >
+                        Complete
+                    </Button>
+                    <Button
+                        variant='outlined'
+                        onClick={() => setOpen(false)}
+                        style={{ backgroundColor: '#EB6383', color: 'white' }}
+                    >
                         Cancel
                     </Button>
                 </DialogActions>
