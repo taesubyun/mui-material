@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+
 const Article = () => {
+    const [open, setOpen] = useState(false);
+
     return (
         <article>
             <h2>WELCOME</h2>애국가(愛國歌)는 ‘나라를 사랑하는 노래’라는
@@ -20,10 +29,29 @@ const Article = () => {
             되새겨보아요.
             <br />
             <ButtonGroup>
-                <Button variant='outlined'>Create</Button>
+                <Button
+                    variant='outlined'
+                    onClick={() => {
+                        setOpen(true);
+                    }}
+                >
+                    Create
+                </Button>
                 <Button variant='outlined'>Update</Button>
             </ButtonGroup>
             <Button variant='outlined'>Delete</Button>
+            <Dialog open={open}>
+                <DialogTitle>Create</DialogTitle>
+                <DialogContent>
+                    <DialogContentText>Hello Dialog!!</DialogContentText>
+                </DialogContent>
+                <DialogActions>
+                    <Button variant='outlined'>Create</Button>
+                    <Button variant='outlined' onClick={() => setOpen(false)}>
+                        Cancel
+                    </Button>
+                </DialogActions>
+            </Dialog>
         </article>
     );
 };
