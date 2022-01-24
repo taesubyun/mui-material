@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Article from './components/Article';
+import Signin from './components/Signin';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
@@ -20,6 +21,7 @@ function App() {
                     <Article />
                 </Grid>
             </Grid>
+            <Signin />
         </Container>
     );
 }
