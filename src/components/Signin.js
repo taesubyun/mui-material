@@ -1,6 +1,7 @@
 import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 import Button from '@mui/material/Button';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 const Signin = () => {
     return (
@@ -21,8 +22,14 @@ const Signin = () => {
                 fullWidth
                 autoComplete='current-password'
             />
+            <FormControlLabel
+                control={<Checkbox value='remember' color='primary' />}
+                label='Remember me'
+            />
             <Checkbox value='remember' color='primary' />
-            <Button type='submit'>Sign in</Button>
+            <Button type='submit' fullWidth variant='contained' sx={{ mt: 4 }}>
+                Sign in
+            </Button>
         </div>
     );
 };
