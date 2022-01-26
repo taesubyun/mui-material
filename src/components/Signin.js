@@ -10,6 +10,9 @@ import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Slider from '@mui/material/Slider';
+import Badge from '@mui/material/Badge';
+import Stack from '@mui/material/Stack';
+import MailIcon from '@mui/icons-material/Mail';
 
 const Signin = () => {
     return (
@@ -83,6 +86,19 @@ const Signin = () => {
                     valueLabelDisplay='auto'
                 />
             </Box>
+            <Stack
+                display={{ justifyContent: 'center' }}
+                spacing={2}
+                direction='row'
+                sx={{ mt: 4, mb: 4 }}
+            >
+                <Badge badgeContent={4} color='secondary'>
+                    <MailIcon color='action' />
+                </Badge>
+                <Badge badgeContent={4} color='success'>
+                    <MailIcon color='action' />
+                </Badge>
+            </Stack>
         </Container>
     );
 };
