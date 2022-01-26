@@ -9,6 +9,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import Slider from '@mui/material/Slider';
 
 const Signin = () => {
     return (
@@ -22,6 +23,7 @@ const Signin = () => {
                     alignItems: 'center',
                 }}
             >
+                {/* display:flex , flex-column: column */}
                 <Avatar sx={{ m: 2, bgcolor: 'secondary.main' }}>
                     <LockOutlinedIcon />
                 </Avatar>
@@ -38,13 +40,13 @@ const Signin = () => {
                     autoFocus
                 />
                 <TextField
-                    margin='normal'
                     name='password'
                     label='Password'
                     type='password'
                     required
                     fullWidth
                     autoComplete='current-password'
+                    margin='normal'
                 />
                 <FormControlLabel
                     control={<Checkbox value='remember' color='primary' />}
@@ -67,6 +69,19 @@ const Signin = () => {
                         <Link>무료로 가입하세요</Link>
                     </Grid>
                 </Grid>
+            </Box>
+            <Box width={300} sx={{ mt: 4 }}>
+                <Slider
+                    size='small'
+                    defaultValue={70}
+                    aria-label='Small'
+                    valueLabelDisplay='auto'
+                />
+                <Slider
+                    defaultValue={50}
+                    aria-label='Default'
+                    valueLabelDisplay='auto'
+                />
             </Box>
         </Container>
     );
