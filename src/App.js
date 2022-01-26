@@ -14,10 +14,10 @@ function App() {
         <Container fixed>
             <Header />
             <Grid container>
-                <Grid item xs='2'>
+                <Grid item xs='3'>
                     <Nav />
                 </Grid>
-                <Grid item xs='10'>
+                <Grid item xs='9'>
                     <Article />
                 </Grid>
             </Grid>

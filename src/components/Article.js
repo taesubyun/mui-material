@@ -18,9 +18,10 @@ const Article = () => {
                     backgroundColor: 'black',
                     display: 'flex',
                     flexDirection: 'column',
-                    padding: '10px',
-                    border: '3px solid lightgreen',
-                    borderRadius: '10px',
+                    textAlign: 'center',
+                    paddingxLeft: '15px',
+
+                    borderRadius: '20px',
                 }}
             >
                 <div>
@@ -30,7 +31,7 @@ const Article = () => {
                             color: 'lightgreen',
                         }}
                     >
-                        WELCOME
+                        알림 :)
                     </h2>
                 </div>
                 <div>
