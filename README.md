@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/72742121/151320396-fc38abb4-ab6c-49c4-a658-ff0054f3335b.png)
+![taesubyun](https://user-images.githubusercontent.com/72742121/151336358-ca6333ec-09b1-4acf-b667-1a14198e9011.gif)
 
 ### 🎨 無계획 CSS 속성 연습 해보기 🎨
 
