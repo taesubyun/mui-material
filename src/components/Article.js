@@ -15,30 +15,37 @@ const Article = () => {
             <div
                 className='article_box'
                 style={{
-                    backgroundColor: 'black',
                     display: 'flex',
                     flexDirection: 'column',
                     textAlign: 'center',
                     paddingxLeft: '15px',
-                    borderRadius: '20px',
+                    borderRadius: '6px',
+                    boxShadow: '5px 5px 5px 5px gray',
                 }}
             >
-                <div>
-                    <h2
+                <div style={{ height: '35px' }}>
+                    <h3
                         className='article_header'
                         style={{
-                            color: 'lightgreen',
+                            fontSize: '1.2rem',
+                            float: 'left',
+                            padding: '0 20px',
                         }}
                     >
                         알림 :)
-                    </h2>
+                    </h3>
                 </div>
                 <div>
-                    <h4 className='article_text' style={{ color: 'white' }}>
-                        동해물과 백두산이 마르고 닳도록 하느님이 보우하사
-                        우리나라 만세
-                        <br />
-                        무궁화 삼천리 화려강산 대한사람 대한으로 길이 보존하세
+                    <h4
+                        className='article_text'
+                        style={{
+                            float: 'left',
+                            padding: '0 20px',
+                            color: 'grey',
+                        }}
+                    >
+                        CREATE 버튼을 눌러 간단 자기 소새 글을 한 줄로
+                        작성해주세요
                     </h4>
                 </div>
             </div>

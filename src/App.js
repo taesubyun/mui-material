@@ -15,7 +15,7 @@ function App() {
         <Container fixed>
             <Header />
             <Signin />
-            <Grid container sx={{ mt: 4 }}>
+            <Grid container maxWidth='sm' sx={{ mt: 4 }}>
                 <Grid item xs='3'>
                     <Nav />
                 </Grid>
