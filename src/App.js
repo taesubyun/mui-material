@@ -1,4 +1,5 @@
 import './App.css';
+
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Article from './components/Article';
@@ -13,7 +14,8 @@ function App() {
     return (
         <Container fixed>
             <Header />
-            <Grid container>
+            <Signin />
+            <Grid container sx={{ mt: 4 }}>
                 <Grid item xs='3'>
                     <Nav />
                 </Grid>
@@ -21,7 +23,6 @@ function App() {
                     <Article />
                 </Grid>
             </Grid>
-            <Signin />
         </Container>
     );
 }

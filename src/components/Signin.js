@@ -9,11 +9,10 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Slider from '@mui/material/Slider';
 
 const Signin = () => {
     return (
-        <Container component='main' maxWidth='lg'>
+        <Container component='main' maxWidth='sm'>
             {/* xs, sm, md, lg, xl */}
             <Box
                 sx={{
@@ -69,19 +68,6 @@ const Signin = () => {
                         <Link>무료로 가입하세요</Link>
                     </Grid>
                 </Grid>
-            </Box>
-            <Box width={300} sx={{ mt: 4 }}>
-                <Slider
-                    size='small'
-                    defaultValue={70}
-                    aria-label='Small'
-                    valueLabelDisplay='auto'
-                />
-                <Slider
-                    defaultValue={50}
-                    aria-label='Default'
-                    valueLabelDisplay='auto'
-                />
             </Box>
         </Container>
     );

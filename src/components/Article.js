@@ -20,7 +20,6 @@ const Article = () => {
                     flexDirection: 'column',
                     textAlign: 'center',
                     paddingxLeft: '15px',
-
                     borderRadius: '20px',
                 }}
             >
