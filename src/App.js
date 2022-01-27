@@ -15,9 +15,9 @@ function App() {
         <Container fixed>
             <Header />
             <Signin />
-            <Grid container maxWidth='sm' sx={{ mt: 4 }}>
+            <Grid container maxWidth='md' sx={{ mt: 7 }}>
                 <Grid item xs='3'>
-                    <Nav />
+                    {/* <Nav /> */}
                 </Grid>
                 <Grid item xs='9'>
                     <Article />

@@ -16,6 +16,7 @@ const Article = () => {
                 className='article_box'
                 style={{
                     display: 'flex',
+
                     flexDirection: 'column',
                     textAlign: 'center',
                     paddingxLeft: '15px',
@@ -63,11 +64,13 @@ const Article = () => {
             </ButtonGroup>
             <Button variant='outlined'>Delete</Button>
             <Dialog open={open}>
-                <DialogTitle style={{ fontSize: '1.8rem' }}>
-                    다이어로그 폼
+                <DialogTitle style={{ fontSize: '1.4rem' }}>
+                    자기소개
                 </DialogTitle>
                 <DialogContent>
-                    <DialogContentText>다이어로그 폼 테스트</DialogContentText>
+                    <DialogContentText>
+                        간단 자기 소개글을 작성하세요
+                    </DialogContentText>
                 </DialogContent>
                 <DialogActions>
                     <Button
